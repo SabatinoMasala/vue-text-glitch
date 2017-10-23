@@ -12,8 +12,7 @@
     "release": "yarn run lint && webpack --progress --hide-modules --config  ./build/webpack.release.conf.js && webpack --progress --hide-modules --config  ./build/webpack.release.min.conf.js"
   },
   "dependencies": {
-    "vue": "^2.4.2",
-    "vue-gh-corners": "^2.0.0"
+    "vue": "^2.4.2"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
