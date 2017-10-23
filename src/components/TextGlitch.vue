@@ -27,11 +27,11 @@
             },
             fill: {
                 type: String,
-                default: '#fff'
+                default: '#2c3e50'
             },
             background: {
                 type: String,
-                default: '#000'
+                default: '#fff'
             },
             highlight1: {
                 type: String,
