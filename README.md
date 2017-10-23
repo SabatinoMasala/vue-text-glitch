@@ -7,7 +7,7 @@ Vue text glitch component.
 ## Getting started
 
 Pull in the package:
-``` 
+```sh
 yarn add vue-text-glitch
 ```
 
@@ -21,7 +21,7 @@ export default {
 }
 ```
 Use in your template:
-```
+```vue
 <TextGlitch
         text="Vue Text Glitch!"
 ></TextGlitch>
