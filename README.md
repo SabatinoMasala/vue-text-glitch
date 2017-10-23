@@ -2,6 +2,8 @@
 
 Vue text glitch component.
 
+![Demo](https://github.com/SabatinoMasala/vue-text-glitch/blob/master/images/glitch.gif?raw=true)
+
 [Check out the demo](https://sabatinomasala.github.io/vue-text-glitch/)
 
 ## Getting started
