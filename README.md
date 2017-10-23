@@ -1,4 +1,4 @@
-# Vue text glitcch
+# Vue text glitch
 
 Vue text glitch component.
 
