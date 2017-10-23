@@ -1,6 +1,6 @@
 {
   "name": "vue-text-glitch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Text glitch effect for Vue",
   "author": "Sabatino Masala <Masalasabatino@gmail.com>",
   "main": "dist/vue-text-glitch.js",
