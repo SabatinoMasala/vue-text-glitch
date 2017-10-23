@@ -1,95 +1,67 @@
-# Vue simple floating labels
+# Vue text glitcch
 
-Simple floating labels as a Vue component without jQuery.
+Vue text glitch component.
 
-[Check out the demo](https://sabatinomasala.github.io/vue-simple-floating-labels/)
+[Check out the demo](https://sabatinomasala.github.io/vue-text-glitch/)
 
 ## Getting started
 
 Pull in the package:
 ``` 
-yarn add vue-simple-floating-labels
+yarn add vue-text-glitch
 ```
 
 Import the component:
-```
-import FloatingLabel from 'vue-simple-floating-labels'
+```vue
+import VueTextGlitch from 'vue-text-glitch'
 export default {
     components: {
-        FloatingLabel
+        VueTextGlitch
     }
 }
 ```
 Use in your template:
 ```
-<FloatingLabel
-    :config="{label: 'Example'}">
-    <input name="example" type="text">
-</FloatingLabel>
+<TextGlitch
+        text="Vue Text Glitch!"
+></TextGlitch>
 ```
 
-## Config
+## Features
 
-### hasClearButton (default `true`)
-Input field should have a clear button.
+* Animation is generated using Javascript
+* Multiple different glitches on the same page
+* Plug and play
 
-### hasClearButton (default `64`)
-The input height.
+## Props
 
-### Line (default `true`)
-Input field should have a line below it (for accessibility reasons)
+### text (default `Vue Text Glitch`)
+The text that should be glitched.
 
-### Scale (default `true`)
-Turn scale animation on or off
+### steps (default `20`)
+Number of keyframes in the animation. 20 means there's a keyframe every 100/20 = 5%.
 
-### HasError (default `false`)
+### height (default `2`)
+The animation speed.
+
+### id (default `text-glitch`)
+This is a prefix for the animation and styles, so you can use multiple different glitches on the same page.
+
+### speed (default `false`)
 Whether or not to apply the error class
 
-### labelOffset
-Set the top and left property of the label.
+### fill (default `#2c3e50`)
+The fill color.
 
-**Defaults:**
-```
-{
-    top: 10,
-    left: 8
-}
-``` 
-### Classes
-Custom classes.
+### background (default `#fff`)
+The background color.
 
-**Defaults:**
-```
-{
-    error: 'has-error'
-}
-``` 
+### highlight1 (default `red`)
+First highlight color.
 
-### color
-Specify the focusColor, lineColor and blurredColor.
-
-**Defaults:**
-```
-{
-    focusColor: '#128CED',
-    errorColor: '#ff0000',
-    lineColor: '#128CED',
-    blurredColor: 'rgba(3, 23, 40, 0.34)'
-}
-```
-
-## Events
-```
-clear: When the user presses the clear button (when using v-model you should clear the value)
-focus: On focus
-blur: On blur
-input: On input
-```
-
-## TODO
-* Textarea
-* Select
+### highlight2 (default `blue`)
+Second highlight color.
 
 ## Credit
 
-* Inspiration: [Pen by Oscar Waczynski](https://codepen.io/osifer/pen/eWvxzB)
+* Effect and explanation: [CSS Tricks](https://css-tricks.com/glitch-effect-text-images-svg/)
