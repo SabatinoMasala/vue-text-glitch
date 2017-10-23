@@ -12,7 +12,7 @@ yarn add vue-text-glitch
 ```
 
 Import the component:
-```vue
+```js
 import VueTextGlitch from 'vue-text-glitch'
 export default {
     components: {
